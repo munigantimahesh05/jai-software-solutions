@@ -1,0 +1,7 @@
+# Vercel Configuration for JAI Software Solutions
+
+{
+  "buildCommand": "npm install && npm run build",
+  "installCommand": "npm install",
+  "outputDirectory": ".next"
+}
