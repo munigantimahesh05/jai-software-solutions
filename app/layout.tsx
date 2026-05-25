@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Jai Software Solutions",
-  description: "AI Automation Company",
+  title: "JAI Software Solutions - AI Automation Services",
+  description: "Building intelligent systems that automate complex workflows and drive real results.",
 };
 
 export default function RootLayout({
