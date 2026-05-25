@@ -1,19 +1,9 @@
 # Netlify Configuration for JAI Software Solutions
 
 [build]
-  command = "npm run build"
+  command = "npm ci && npm run build"
   functions = "netlify/functions"
   publish = ".next"
-
-[build.environment]
-  NODE_VERSION = "18"
-  NPM_VERSION = "10"
-
-# Redirect all routes to Next.js for dynamic rendering
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
 
 # Cache settings
 [[headers]]
@@ -25,17 +15,3 @@
   for = "/_next/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
-
-# Environment variables (optional)
-# Add your environment variables here or in Netlify UI
-[context.production]
-  environment = { NODE_ENV = "production" }
-
-[context.preview]
-  environment = { NODE_ENV = "preview" }
-
-[context.deploy-preview]
-  environment = { NODE_ENV = "preview" }
-
-[context.branch-deploy]
-  environment = { NODE_ENV = "development" }
