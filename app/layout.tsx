@@ -1,19 +1,18 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import "./globals.css";
 
-export const metadata: Metadata = {
-  title: 'JAI Software Solutions',
-  description: 'End-to-End AI & Software Development Services',
-}
+export const metadata = {
+  title: "Jai Software Solutions",
+  description: "AI Automation Company",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className="bg-dark text-white">{children}</body>
+      <body>{children}</body>
     </html>
-  )
+  );
 }
