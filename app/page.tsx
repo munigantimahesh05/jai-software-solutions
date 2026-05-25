@@ -1,21 +1,8 @@
-import Navbar from '@/components/Navbar'
-import Hero from '@/components/Hero'
-import Services from '@/components/Services'
-import Stats from '@/components/Stats'
-import Process from '@/components/Process'
-import About from '@/components/About'
-import Footer from '@/components/Footer'
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="overflow-hidden">
-      <Navbar />
-      <Hero />
-      <Services />
-      <Stats />
-      <Process />
-      <About />
-      <Footer />
+    <main className="bg-black text-white min-h-screen p-10">
+      <h1>Jai Software Solutions</h1>
+      <p>AI Automation for Modern Businesses</p>
     </main>
-  )
+  );
 }
