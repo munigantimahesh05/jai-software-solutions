@@ -1,12 +1,12 @@
 # Netlify Configuration for JAI Software Solutions
 
 [build]
-  command = "npm install && npm run build"
+  command = "npm run build"
   functions = "netlify/functions"
   publish = ".next"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "18"
   NPM_VERSION = "10"
 
 # Redirect all routes to Next.js for dynamic rendering
